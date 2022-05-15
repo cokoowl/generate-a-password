@@ -1,8 +1,8 @@
 // Assignment Code
 
 //getting button from the html using class id
-let generateBtn = document.querySelector("#generate");
-
+let generateBtn = document.querySelector('#generate');
+let copyBtn = document.querySelector('#copy');
 let characterSet = [];
 
 function writePassword() {
@@ -11,9 +11,19 @@ function writePassword() {
   passwordText.value = password;
 }
 
+function copyPassword() {
+  let copyText = document.querySelector('#password')
+;
+  copyText.select();
+  document.execCommand('copy');
+  alert('Copy capisced!');
+}
+
 
 // generateBtn (object. html).addEventListener (object method)('click', dialogueBox);
 generateBtn.addEventListener('click', writePassword);
+copyBtn.addEventListener('click', copyPassword);
+
 
 // overall function to generate password
 function generatePassword() {
@@ -71,11 +81,6 @@ function generatePassword() {
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
-
-
-//   let randomPassword = Math.floor(Math.random() * characterSet);
-//   for (let i = 0; i < characterSet; i++) {
-// return(randomPassword)
 
 
 
