@@ -29,6 +29,10 @@ WHEN the password is generated
 THEN the password is displayed to the page
 ```
 
+A gif to demonstrate the the project's functionality:
+
+![A user clicks on make button to make a custom password according to their criterias](./Assets/03-generate-password-homework.gif)
+
 
 ## Credits
 * Special characters list: (https://www.owasp.org/index.php/Password_special_characters)

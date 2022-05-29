@@ -73,15 +73,12 @@ function generatePassword() {
   }
   console.log(password);
   return password;
-
 }
-
 
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
-
 
 
 // Prompt user for password length? (between 8 and 128 characters)
